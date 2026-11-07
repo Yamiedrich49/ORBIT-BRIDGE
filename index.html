@@ -11,16 +11,54 @@
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;overscroll-behavior-y:contain}body{background:var(--bg);font-family:ui-rounded,"Hiragino Maru Gothic ProN","Hiragino Kaku Gothic ProN",-apple-system,BlinkMacSystemFont,"Noto Sans JP",sans-serif;color:var(--ink);-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}button:focus-visible,[role=slider]:focus-visible{outline:3px solid #7dcfc4;outline-offset:4px}.app{max-width:520px;margin:0 auto;padding:16px 14px max(18px,env(safe-area-inset-bottom));user-select:none;-webkit-user-select:none}.header{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:0 3px}.brand{font-size:12px;letter-spacing:.12em;font-weight:900;display:flex;align-items:center;gap:8px;white-space:nowrap}.brand-icon{width:25px;height:25px;border:3px solid var(--teal);border-radius:100%;position:relative}.brand-icon:before{content:"";position:absolute;width:6px;height:6px;background:var(--coral);border-radius:50%;right:-4px;top:4px;box-shadow:0 0 0 3px var(--bg)}.muted-btn{border:1px solid var(--border);background:#fff;width:39px;height:39px;border-radius:14px;display:grid;place-items:center;color:#789491}.muted-btn svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.muted-btn:active{transform:scale(.95)}.heading{margin:20px 4px 12px}.stage-meta{display:flex;align-items:center;justify-content:space-between;gap:8px}.tag{font-size:10px;color:var(--teal-deep);font-weight:950;letter-spacing:.11em}.counter{font-size:11px;font-weight:900;color:#9aadaa;font-variant-numeric:tabular-nums}.heading h1{font-size:clamp(21px,5.5vw,29px);line-height:1.34;letter-spacing:.012em;font-weight:950;margin:7px 0 5px}.heading p{font-size:12px;line-height:1.6;color:var(--muted);font-weight:750;margin:0;min-height:19px}.steps{display:grid;grid-template-columns:repeat(10,1fr);gap:5px;margin:12px 2px 14px}.steps span{height:5px;border-radius:20px;background:#e0eae6;transition:background .25s}.steps span.current{background:var(--teal)}.steps span.done{background:#92d8c8}.board{position:relative;background:#fff;border:1px solid #e4eeeb;border-radius:26px;box-shadow:var(--shadow);overflow:hidden}.board svg.main{display:block;width:100%;height:auto;touch-action:none;overflow:visible}.board::after{content:"";pointer-events:none;position:absolute;inset:0;border-radius:26px;box-shadow:inset 0 2px 0 rgba(255,255,255,.9)}.future-btn{position:absolute;right:15px;top:14px;z-index:2;display:flex;gap:5px;align-items:center;padding:9px 11px;background:rgba(255,255,255,.94);color:#678884;border:1px solid #e1efea;border-radius:12px;font-size:11px;font-weight:850;box-shadow:0 4px 12px rgba(45,92,86,.05)}.future-btn.active{background:#e5f7f0;color:#087f76;border-color:#9bdcc9}.future-btn[disabled]{opacity:.5}.future-btn .eye{width:15px;height:15px;border:1.7px solid currentColor;border-radius:70% 15% 70% 15%;transform:rotate(45deg);display:inline-flex;align-items:center;justify-content:center}.eye:before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor}.board-notice{position:absolute;left:12px;right:12px;top:52%;text-align:center;z-index:3;pointer-events:none;transform:translateY(-50%);opacity:0;transition:opacity .25s,transform .25s}.board-notice.visible{opacity:1;transform:translateY(-54%)}.notice-inner{margin:0 auto;display:inline-block;padding:12px 22px;border-radius:20px;background:#fffffff2;box-shadow:0 12px 30px rgba(35,79,77,.12);font-weight:950;font-size:19px;color:var(--teal-deep)}.board-notice.bad .notice-inner{color:#c67c59}.hintline{display:flex;align-items:center;justify-content:center;min-height:22px;color:#728e8d;font-size:11px;font-weight:820;margin:7px 0 0;text-align:center;padding:0 8px}.hintline.good{color:#0b978b}.hintline.bad{color:#c7815d}.actions{display:flex;align-items:stretch;gap:10px;margin-top:12px}.reset{width:59px;flex-shrink:0;border:1px solid var(--border);color:#7c9694;background:#fff;border-radius:18px;display:grid;place-items:center}.reset svg{width:24px;height:24px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}.primary{flex:1;border:0;border-radius:18px;background:#213f47;box-shadow:0 8px 18px rgba(30,70,77,.16);color:#fff;min-height:59px;display:flex;align-items:center;justify-content:center;gap:12px;padding:12px;font-weight:950;font-size:15px;letter-spacing:.06em;transition:transform .12s,background .2s}.primary:active,.reset:active{transform:translateY(2px) scale(.99)}.primary:disabled{opacity:.55;cursor:default}.primary.win{background:var(--teal-deep)}.primary span{font-size:21px;font-weight:650}.below{margin:14px 0 0}.below details{background:#fff;border:1px solid #e3efea;border-radius:17px;padding:14px 16px;font-size:12px;line-height:1.8;color:#718e8a}.below summary{font-size:12px;cursor:pointer;font-weight:900;list-style:none;color:#527b77}.below summary:before{content:"✳";color:var(--teal);margin-right:9px;font-size:14px}.below p{margin:9px 0 0}.chapter-note{font-size:11px;color:#a5b6b3;text-align:center;margin:11px 0 0;font-weight:750}.turn-area{cursor:grab;touch-action:none;outline:none}.turn-area:active{cursor:grabbing}.dial-glow{opacity:.27}.motion-a{transition:opacity .2s}.confetti{animation:fall 950ms cubic-bezier(.19,.84,.33,1) both}.pop{animation:pop .45s cubic-bezier(.19,1.4,.41,1) both}.spark{animation:twinkle 1.2s ease-in-out infinite alternate}.animated-ring{animation:ring 1.1s ease-out both}.hero-ears{transform-box:fill-box;transform-origin:center bottom;animation:ears 3.8s ease-in-out infinite}.highlight-rod{filter:drop-shadow(0 0 5px rgba(13,171,155,.13))}@keyframes fall{0%{opacity:0;transform:translateY(-24px) rotate(0) scale(.4)}22%{opacity:1}100%{opacity:0;transform:translateY(66px) rotate(110deg) scale(.9)}}@keyframes pop{0%{opacity:0;transform:scale(.8)}100%{opacity:1;transform:scale(1)}}@keyframes twinkle{0%{opacity:.3}100%{opacity:1}}@keyframes ring{0%{opacity:.8;transform:scale(.5)}100%{opacity:0;transform:scale(1.8)}}@keyframes ears{0%,95%,100%{transform:rotate(0)}97%{transform:rotate(-5deg)}}
 @media(max-width:390px){.app{padding:11px 10px max(12px,env(safe-area-inset-bottom))}.heading{margin:15px 4px 9px}.heading h1{font-size:22px;margin:5px 0 3px}.heading p{font-size:11px}.steps{margin:10px 2px 12px}.board{border-radius:23px}.actions{margin-top:9px}.primary{min-height:56px}.board-notice .notice-inner{font-size:16px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* v5 — one clear task, one primary action, one story */
+:root{--bg:#f7faf8;--ink:#24454a;--teal:#0eaa99;--teal-deep:#0b8176;--border:#e0ebe6}
+body{background:linear-gradient(180deg,#f8fbf9 0%,#f0f7f3 100%)}
+.app{max-width:490px;padding:12px 12px max(16px,env(safe-area-inset-bottom))}
+.header{padding:1px 4px}.brand{font-size:11px;letter-spacing:.13em;color:#385a59}
+.muted-btn{width:35px;height:35px;border-radius:12px}
+.heading{margin:12px 4px 8px}
+.heading .tag{font-size:10px;letter-spacing:.10em}
+.heading h1{font-size:clamp(22px,5.7vw,26px);margin:5px 0 2px;letter-spacing:0;line-height:1.3}
+.heading p{font-size:12px;min-height:0;color:#79938d}
+.steps{margin:9px 3px 11px;gap:5px}.steps span{height:4px}
+.route{display:flex;align-items:stretch;gap:4px;margin:0 0 9px}
+.route-step .step-words{display:flex;flex-direction:column;align-items:start;line-height:1.16;gap:2px}.route-step .step-when{font-size:9px;opacity:.77;font-weight:850}.route-sep{display:grid;place-items:center;color:#9cb7ac;font-size:14px;flex:0 0 9px;font-weight:900}
+.route-step{display:flex;align-items:center;justify-content:center;gap:5px;flex:1;min-width:0;padding:7px 6px;border:1px solid #e1eae5;border-radius:12px;background:#fff;color:#839b95;transition:background .18s,border-color .18s,color .18s}
+.route-step .tick{width:18px;height:18px;border-radius:50%;background:#eaf0ec;display:grid;place-items:center;flex:0 0 18px;color:#7eaaa0;font-size:10px;font-weight:900}
+.route-step .step-name{font-size:11px;letter-spacing:-.02em;font-weight:900;white-space:nowrap}
+.route-step.ok{background:#e4f6ef;border-color:#addfcd;color:#087f72}.route-step.ok .tick{background:#0ea18e;color:white}
+.route-step.active{border-color:#99d6ca;box-shadow:inset 0 0 0 1px #b5e5d7}
+.board{border-radius:22px;box-shadow:0 10px 35px rgba(37,91,79,.085);border:1px solid #dfebe6}
+.board:after{border-radius:22px}
+.scene-key{position:absolute;top:9px;left:11px;z-index:2;pointer-events:none;display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:10px;font-weight:850;color:#6c928a}
+.scene-key span{display:flex;gap:4px;align-items:center}.scene-key i{display:inline-block;width:15px;height:0;border-top:3px solid #15aaa0;border-radius:9px}
+.scene-key .key-later i{border-top:3px dashed #9bb9af}
+.future-btn{right:8px;top:34px;padding:7px 9px;font-size:10px;box-shadow:none;min-height:29px;border-radius:11px}
+.guidance{margin:9px 1px 0;min-height:54px;display:flex;align-items:center;gap:10px;padding:9px 12px;border:1px solid #ddebe6;border-radius:15px;background:#fff}
+.guide-step{width:29px;height:29px;flex:0 0 29px;border-radius:10px;background:#e2f4ec;color:#088575;font-size:14px;display:grid;place-items:center;font-weight:950}
+.guidance.good{background:#e9f8f1;border-color:#aee4d2}.guidance.good .guide-step{background:#0ea18d;color:#fff}
+.guidance.bad{background:#fff6f0;border-color:#efd1bc}.guidance.bad .guide-step{background:#edb493;color:#fff}
+.hintline{display:block;margin:0;padding:0;min-height:0;text-align:left;color:#40665f;font-size:12px;line-height:1.5;font-weight:800}
+.hintline.bad{color:#b87956}.hintline.good{color:#0a8477}
+.actions{margin-top:9px;gap:9px}.reset{width:52px;border-radius:16px}.primary{font-size:15px;min-height:57px;border-radius:16px;background:#1d4b51;box-shadow:0 7px 16px rgba(36,79,79,.15)}
+.below{margin-top:10px}.below details{padding:10px 13px;border-radius:13px;font-size:11px}.below summary{font-size:11px}.below p{margin:7px 0 0}
+.chapter-note{margin:9px 2px 0;font-size:10px;color:#90a9a1}
+.board-notice{top:48%}.notice-inner{font-size:19px;border:1px solid #d9eee3}
+@media(max-width:390px){.app{padding:9px 10px max(12px,env(safe-area-inset-bottom))}.heading{margin:10px 4px 7px}.heading h1{font-size:22px}.steps{margin:7px 3px 9px}.route-step{padding:7px 3px}.route-step .step-name{font-size:10.5px}.guidance{margin-top:7px;min-height:51px}.primary{min-height:54px}.future-btn{top:33px}}
 </style>
 </head>
 <body>
 <div class="app">
   <header class="header"><div class="brand"><span class="brand-icon" aria-hidden="true"></span>ORBIT BRIDGE</div><button class="muted-btn" id="sound" aria-label="音を消す" title="音のオン・オフ"><svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9H4"/><path id="sound-waves" d="M17 9a4 4 0 0 1 0 6M19.5 6a8 8 0 0 1 0 12"/></svg></button></header>
-  <section class="heading"><div class="stage-meta"><span class="tag" id="chapter">CHAPTER 01 · はしの ひみつ</span><span class="counter" id="counter">01 / 10</span></div><h1 id="headline">まるを回して、橋をつなごう。</h1><p id="description">円の まるい点を、指で動かしてみよう。</p></section>
+  <section class="heading"><div class="stage-meta"><span class="tag" id="chapter">CHAPTER 01 · はしの ひみつ</span><span class="counter" id="counter">01 / 10</span></div><h1 id="headline">ウサギを ゴールへ！</h1><p id="description">まるの点を回すと、橋が上下するよ。</p></section>
   <div class="steps" id="steps" aria-label="10ステージの進行状況"></div>
+  <div class="route" id="route" aria-label="ウサギが進む順番"></div>
   <main class="board" aria-label="橋と回転装置がつながったゲーム盤面">
-    <button class="future-btn" id="future" type="button" aria-pressed="false"><span class="eye" aria-hidden="true"></span>さきの高さ</button>
-    <svg class="main" id="board-svg" viewBox="0 0 400 585" role="img" aria-label="円を回して足場を動かすパズル">
+    <div class="scene-key"><span class="key-now"><i></i>いまの橋</span><span class="key-later"><i></i>動いたあとの橋</span></div>
+    <button class="future-btn" id="future" type="button" aria-label="橋が動くようすを見て、元の位置に戻す"><span class="eye" aria-hidden="true"></span>うごきを見る</button>
+    <svg class="main" id="board-svg" viewBox="0 0 400 532" role="img" aria-label="円を回して足場を動かすパズル">
       <defs>
         <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fbfefc"/><stop offset="1" stop-color="#edf9f4"/></linearGradient>
         <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e8f7f2"/><stop offset="1" stop-color="#f7fcf9"/></linearGradient>
@@ -28,41 +66,41 @@
         <linearGradient id="engine" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fcfdfb"/><stop offset="1" stop-color="#f6faf7"/></linearGradient>
         <filter id="softshadow" x="-50%" y="-80%" width="200%" height="260%"><feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#6ea69c" flood-opacity=".16"/></filter>
         <filter id="glow" x="-70%" y="-70%" width="240%" height="240%"><feGaussianBlur stdDeviation="9"/></filter>
-        <clipPath id="scenecut"><rect x="0" y="0" width="400" height="350"/></clipPath>
+        <clipPath id="scenecut"><rect x="0" y="0" width="400" height="304"/></clipPath>
       </defs>
-      <rect width="400" height="585" fill="url(#engine)"/>
-      <g clip-path="url(#scenecut)"><rect width="400" height="350" fill="url(#sky)"/><g id="distant"></g><g id="land"></g><g id="tracks"></g><g id="bridges"></g><g id="predictions"></g><g id="traveler"></g><g id="confetti"></g></g>
-      <path d="M0 350 H400" stroke="#e2efea" stroke-width="1.5"/>
+      <rect width="400" height="532" fill="url(#engine)"/>
+      <g clip-path="url(#scenecut)"><rect width="400" height="304" fill="url(#sky)"/><g id="distant"></g><g id="land"></g><g id="tracks"></g><g id="bridges"></g><g id="predictions"></g><g id="traveler"></g><g id="confetti"></g></g>
+      <path d="M0 304 H400" stroke="#e2efea" stroke-width="1.5"/>
       <g id="mechanics"></g>
       <g id="wheels"></g>
       <g id="speed-control"></g>
     </svg>
     <div id="board-notice" class="board-notice" aria-live="polite"><span class="notice-inner" id="notice-text"></span></div>
   </main>
-  <div class="hintline" id="hintline" aria-live="polite">● をまわすと、橋も動くよ</div>
-  <div class="actions"><button class="reset" id="reset" aria-label="はじめからやりなおす" title="やりなおす"><svg viewBox="0 0 24 24"><path d="M4 11a8 8 0 1 1 2 6M4 5v6h6"/></svg></button><button class="primary" id="play" type="button">わたってみる <span>→</span></button></div>
+  <div class="guidance" id="guidance"><span class="guide-step" id="guide-step">1</span><span class="hintline" id="hintline" aria-live="polite">まず、みどりのまるを 回してみよう</span></div>
+  <div class="actions"><button class="reset" id="reset" aria-label="はじめからやりなおす" title="やりなおす"><svg viewBox="0 0 24 24"><path d="M4 11a8 8 0 1 1 2 6M4 5v6h6"/></svg></button><button class="primary" id="play" type="button">▶ ウサギを わたらせる <span>→</span></button></div>
   <section class="below"><details><summary>まるの ひみつを 見てみよう</summary><p>まるの上の点が上に行くと、橋も上へ。下に行くと、橋も下へ。まるが1周すると、橋は「上 → 下 → 上」の動きをくりかえすよ。その高さを横にならべると、波の形になるんだ。</p></details></section>
-  <p class="chapter-note">よそうして、ためして、見つけよう。</p>
+  <p class="chapter-note">橋は「しゅっぱつ！」を押すと、まるといっしょに動くよ。</p>
 </div>
 <script>
 'use strict';
 const D=Math.PI/180,TAU=Math.PI*2,$=id=>document.getElementById(id);
 const LEVELS=[
- {title:'はじめの いっぽ',caption:'はしと まるの「高さ」に 注目！',dual:false,sa:1,a:0,ia:180,tend:1},
- {title:'下から 上へ',caption:'まるを回すと、橋はどう動く？',dual:false,sa:1,a:270,ia:90,tend:2},
- {title:'おなじ高さ、ちがう向き',caption:'つぎに 上がる？ それとも 下がる？',dual:false,sa:1,a:180,ia:0,tend:1},
- {title:'てっぺんの ひみつ',caption:'いちばん 上から 回りはじめよう',dual:false,sa:1,a:90,ia:270,tend:1},
- {title:'ふたつの まる',caption:'2つの橋が 出会うところを 見つけよう',dual:true,sa:1,a:0,ia:0,sb:1,b:0,ib:180,transfer:1,tend:2},
+ {title:'ウサギを ゴールへ！',caption:'みどりの橋で、向こう岸まで わたろう',dual:false,sa:1,a:0,ia:180,tend:1},
+ {title:'下から 上へ！',caption:'橋が動いたあとの 高さも考えてみよう',dual:false,sa:1,a:270,ia:90,tend:2},
+ {title:'つぎは 下がる？',caption:'同じ高さでも、動く向きが ちがうよ',dual:false,sa:1,a:180,ia:0,tend:1},
+ {title:'いちばん 上から',caption:'いちばん高いところを 通ってみよう',dual:false,sa:1,a:90,ia:270,tend:1},
+ {title:'橋から 橋へ！',caption:'みどりから オレンジへ のりかえよう',dual:true,sa:1,a:0,ia:0,sb:1,b:0,ib:180,transfer:1,tend:2},
  {title:'すれちがい',caption:'ぴったり 同じタイミングを ねらおう',dual:true,sa:1,a:180,ia:0,sb:1,b:180,ib:0,transfer:1,tend:2},
  {title:'谷から てっぺんへ',caption:'2つの橋の動きを 想像してみよう',dual:true,sa:1,a:270,ia:90,sb:1,b:270,ib:90,transfer:1,tend:2},
  {title:'2ばいの はやさ',caption:'オレンジの円は、はやさも 変えられる',dual:true,sa:1,a:0,ia:0,sb:2,b:270,ib:0,initialSpeed:1,chooseSpeed:true,transfer:1,tend:2},
  {title:'スピードの ひみつ',caption:'はやさが変わると、出会う高さも変わる',dual:true,sa:1,a:180,ia:0,sb:2,b:90,ib:270,initialSpeed:1,chooseSpeed:true,transfer:1,tend:2},
  {title:'ふたつの リズム',caption:'すこし先まで まわるところを 想像しよう',dual:true,sa:1,a:90,ia:270,sb:2,b:270,ib:90,initialSpeed:1,chooseSpeed:true,transfer:2,tend:3}
 ];
-const state={level:0,phaseA:0,phaseB:0,speedB:1,clock:0,running:false,win:false,peek:false,actorX:57,actorY:0,actorRide:null,actorHop:0,error:null,wonFx:false,activeTouch:null,attemptId:0,interacted:false};
+const state={level:0,phaseA:0,phaseB:0,speedB:1,clock:0,running:false,win:false,peek:false,actorX:57,actorY:0,actorRide:null,actorHop:0,error:null,wonFx:false,activeTouch:null,preview:false,attemptId:0,interacted:false,lastFeedback:''};
 let soundOn=true,audio=null,noticeTimer=null,lastTick=0;
 const cfg=()=>LEVELS[state.level];const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));const rad=deg=>deg*D;const mod=deg=>(deg%360+360)%360;
-const coords=()=>{const dual=cfg().dual;return {r:dual?57:72,ry:dual?476:463,xa:dual?113:200,xb:287,amp:dual?57:72,ybase:178};};
+const coords=()=>{const dual=cfg().dual;return {r:dual?54:66,ry:dual?420:405,xa:dual?113:200,xb:287,amp:dual?54:66,ybase:160};};
 const angle=(which,t=state.clock)=>rad(which==='a'?state.phaseA:state.phaseB)+(which==='a'?cfg().sa:state.speedB)*Math.PI/2*t;
 const height=(which,t=state.clock)=>Math.sin(angle(which,t));
 const yAt=h=>coords().ybase-coords().amp*h;
@@ -85,11 +123,11 @@ let marks='';for(let i=0;i<8;i++){const t=i*Math.PI/4,inner=r+15,outer=r+(i%2===
 return `<g class="turn-area" data-wheel="${which}" role="slider" aria-label="${which==='a'?'みどり':'オレンジ'}の円を回す" aria-valuemin="0" aria-valuemax="315" aria-valuenow="${Math.round(mod(which==='a'?state.phaseA:state.phaseB)/45)*45%360}" tabindex="0"><circle cx="${x}" cy="${y}" r="${r+28}" fill="transparent"/><circle class="dial-glow" cx="${x}" cy="${y}" r="${r+10}" fill="${soft}" filter="url(#glow)"/><circle cx="${x}" cy="${y}" r="${r+11}" fill="#fff" stroke="#e3efea" stroke-width="2"/><circle cx="${x}" cy="${y}" r="${r}" fill="${which==='a'?'#fbfffd':'#fffcf9'}" stroke="${soft}" stroke-width="5"/>${marks}<circle cx="${x}" cy="${y}" r="${r-10}" fill="none" stroke="#e9f1ed" stroke-width="1.2" stroke-dasharray="2 11"/><path d="M${x} ${y} L${px} ${py}" stroke="${col}" stroke-width="5.5" stroke-linecap="round"/><circle cx="${x}" cy="${y}" r="8" fill="${which==='a'?'#b9e4dc':'#f7d7c0'}" stroke="#fff" stroke-width="3"/><circle cx="${px}" cy="${py}" r="18" fill="${col}" filter="url(#softshadow)" stroke="#fff" stroke-width="4"/><circle cx="${px-4}" cy="${py-5}" r="4" fill="#fff" opacity=".48"/>${cfg().chooseSpeed?'':`<text x="${x}" y="${y+r+44}" text-anchor="middle" font-size="11.5" font-weight="900" fill="${which==='a'?'#248a82':'#c58865'}">${which==='a'?'みどりの まる':'オレンジの まる'}</text>`}</g>`;}
 function turtle(x,y){return `<g transform="translate(${x} ${y-state.actorHop})"><ellipse cx="0" cy="19" rx="14" ry="4" fill="#87a99f" opacity=".18"/><g class="hero-ears"><path d="M-8 -12C-16 -28 -17 -40 -11 -43C-3 -43 0 -29 0 -17 M7 -12C4 -28 7 -40 13 -40C23 -36 17 -24 14 -12" fill="#f5c46b" stroke="#e9ab55" stroke-width="1.5"/><path d="M-11 -32L-7 -20 M13 -31L11 -21" stroke="#e79976" stroke-width="3" stroke-linecap="round"/></g><circle cx="0" cy="0" r="17" fill="#f5c56c" stroke="#e8ad55" stroke-width="1"/><circle cx="-5" cy="-1" r="2.1" fill="#33474a"/><circle cx="6" cy="-1" r="2.1" fill="#33474a"/><circle cx="10" cy="5" r="3.5" fill="#fff0d9" opacity=".75"/><path d="M-2 7Q1 10 4 7" stroke="#9d7544" stroke-width="1.6" fill="none" stroke-linecap="round"/></g>`;}
 function scenery(){const sy=yAt(startH()),gy=yAt(goalH()),la=xLandL(),ra=xLandR();
-const background=`<circle cx="49" cy="57" r="26" fill="#fff" opacity=".65"/><circle cx="76" cy="55" r="17" fill="#fff" opacity=".65"/><circle cx="349" cy="77" r="21" fill="#fff" opacity=".65"/><path d="M0 320 Q50 307 100 320 T200 320 T300 320 T400 320V350H0Z" fill="url(#water)"/><path d="M-10 326 Q25 319 60 326T130 326T200 326T270 326T340 326T410 326" fill="none" stroke="#c1e7dd" stroke-width="2" opacity=".7"/><path d="M-10 340 Q25 333 60 340T130 340T200 340T270 340T340 340T410 340" fill="none" stroke="#d6eee6" stroke-width="1.6" opacity=".75"/>`;
-const cliffs=`<path d="M0 ${sy}H${la}V318H0Z" fill="url(#earth)"/><path d="M${ra} ${gy}H400V318H${ra}Z" fill="url(#earth)"/><path d="M0 ${sy}H${la}" stroke="#7db7a2" stroke-width="9" stroke-linecap="round"/><path d="M${ra} ${gy}H400" stroke="#7db7a2" stroke-width="9" stroke-linecap="round"/><path d="M0 ${sy+12}H${la-9}V307M${ra+9} ${gy+12}V307" stroke="#d0e2d8" stroke-width="1.5" opacity=".65" fill="none"/><path d="M${la-30} ${sy-2}q5 -8 10 0m-5 0v-6" stroke="#76ad92" stroke-width="2" fill="none"/><path d="M${ra+16} ${gy-2}q5 -8 10 0m-5 0v-6" stroke="#76ad92" stroke-width="2" fill="none"/><path d="M${ra+60} ${gy-68}V${gy-4}" stroke="#779d95" stroke-width="3.8" stroke-linecap="round"/><path d="M${ra+62} ${gy-67}l28 8-28 9z" fill="#edac78"/><text x="${ra+57}" y="${gy-78}" text-anchor="middle" fill="#91a9a1" font-size="9" font-weight="950" letter-spacing="1.4"></text>`;
+const background=`<circle cx="49" cy="57" r="26" fill="#fff" opacity=".65"/><circle cx="76" cy="55" r="17" fill="#fff" opacity=".65"/><circle cx="349" cy="77" r="21" fill="#fff" opacity=".65"/><path d="M0 277 Q50 265 100 277 T200 277 T300 277 T400 277V304H0Z" fill="url(#water)"/><path d="M-10 283 Q25 276 60 283T130 283T200 283T270 283T340 283T410 283" fill="none" stroke="#c1e7dd" stroke-width="2" opacity=".7"/><path d="M-10 294 Q25 287 60 294T130 294T200 294T270 294T340 294T410 294" fill="none" stroke="#d6eee6" stroke-width="1.6" opacity=".75"/>`;
+const cliffs=`<text x="10" y="${sy-17}" font-weight="950" font-size="10.5" fill="#619c8c" letter-spacing="1">スタート</text><path d="M0 ${sy}H${la}V282H0Z" fill="url(#earth)"/><path d="M${ra} ${gy}H400V282H${ra}Z" fill="url(#earth)"/><path d="M0 ${sy}H${la}" stroke="#7db7a2" stroke-width="9" stroke-linecap="round"/><path d="M${ra} ${gy}H400" stroke="#7db7a2" stroke-width="9" stroke-linecap="round"/><path d="M0 ${sy+12}H${la-9}V277M${ra+9} ${gy+12}V277" stroke="#d0e2d8" stroke-width="1.5" opacity=".65" fill="none"/><path d="M${la-30} ${sy-2}q5 -8 10 0m-5 0v-6" stroke="#76ad92" stroke-width="2" fill="none"/><path d="M${ra+16} ${gy-2}q5 -8 10 0m-5 0v-6" stroke="#76ad92" stroke-width="2" fill="none"/><path d="M${ra+60} ${gy-68}V${gy-4}" stroke="#779d95" stroke-width="3.8" stroke-linecap="round"/><path d="M${ra+62} ${gy-67}l28 8-28 9z" fill="#edac78"/><text x="${ra+47}" y="${gy-18}" font-size="11" font-weight="950" fill="#d18a5e">ゴール</text><text x="${ra+57}" y="${gy-78}" text-anchor="middle" fill="#91a9a1" font-size="9" font-weight="950" letter-spacing="1.4"></text>`;
 return {background,cliffs};}
 function platform(x,y,color,w=58){const xx=x-w/2;return `<g filter="url(#softshadow)"><rect x="${xx-2}" y="${y-5}" rx="7" width="${w+4}" height="14" fill="${color}"/><rect x="${xx}" y="${y-5}" rx="5" width="${w}" height="5" fill="#fff" opacity=".42"/><path d="M${xx+10} ${y+9}V${y+17}M${xx+w-10} ${y+9}V${y+17}" stroke="${color}" stroke-width="4" opacity=".22" stroke-linecap="round"/></g>`;}
-function ghost(which,t,label){const x=which==='a'?xA():xB(),y=yAt(height(which,t)),col=which==='a'?'#14a99d':'#eea06d';return `<path d="M${x-26} ${y}H${x+26}" stroke="${col}" stroke-width="4" stroke-linecap="round" stroke-dasharray="4 6" opacity=".84"/><text x="${x}" y="${y-12}" fill="${col}" font-weight="850" font-size="10" text-anchor="middle">${label}</text>`;}
+function ghost(which,t,label){const x=which==='a'?xA():xB(),y=yAt(height(which,t)),col=which==='a'?'#14a99d':'#eea06d';return `<path d="M${x-26} ${y}H${x+26}" stroke="${col}" stroke-width="4" stroke-linecap="round" stroke-dasharray="6 6" opacity=".92"/>`;}
 function scene(){const c=coords(),q=cfg(),sy=yAt(startH()),gy=yAt(goalH()),ay=yAt(height('a')),by=yAt(height('b')),la=xLandL(),ra=xLandR();const {background,cliffs}=scenery();$('distant').innerHTML=background;$('land').innerHTML=cliffs;
 let strands='';if(!state.running&&!state.win&&near(height('a',0),startH()))strands+=`<path d="M${la} ${sy}H${xA()-30}" stroke="#a7dbc8" stroke-width="6" stroke-linecap="round" opacity=".7"/>`;
 if(state.error){const [x1,y1,x2,y2]=state.error;strands+=`<path d="M${x1} ${y1}L${x2} ${y2}" stroke="#e4a07c" stroke-width="3" stroke-dasharray="4 7" stroke-linecap="round"/><circle cx="${x2}" cy="${y2}" r="7" fill="#fff" stroke="#e2a184" stroke-width="2.5"/>`}
@@ -97,40 +135,74 @@ if(state.running&&state.clock>=(q.transfer??0)-.005&&state.clock<=(q.transfer??0
 if(state.win)strands+=`<path d="M${q.dual?xB()+30:xA()+30} ${gy}H${ra}" stroke="#87d3bf" stroke-width="7" stroke-linecap="round"/>`;
 $('tracks').innerHTML=strands;
 $('bridges').innerHTML=platform(xA(),ay,'#18ada0',q.dual?54:72)+(q.dual?platform(xB(),by,'#f0a472',54):'');
-let forecast='';if(state.peek&&!state.running&&!state.win){const t=q.dual?q.transfer:q.tend;forecast+=ghost('a',t,`${t}はく後`);if(q.dual){forecast+=ghost('b',t,`${t}はく後`);forecast+=ghost('b',q.tend,'さいご')}}
+let forecast='';if(state.peek&&!state.running&&!state.win&&!state.preview){const t=q.dual?q.transfer:q.tend;forecast+=ghost('a',t,`このあと`);if(q.dual){forecast+=ghost('b',t,`このあと`);forecast+=ghost('b',q.tend,'ゴールのとき')}}
 $('predictions').innerHTML=forecast;
 if(state.actorRide==='a')state.actorY=ay-21;if(state.actorRide==='b')state.actorY=by-21;
 $('traveler').innerHTML=turtle(state.actorX,state.actorY);
 $('mechanics').innerHTML=wire('a')+(q.dual?wire('b'):'');$('wheels').innerHTML=wheel('a')+(q.dual?wheel('b'):'');
 if(state.wonFx){$('confetti').innerHTML=Array.from({length:23},(_,i)=>{const x=ra+30+Math.sin(i*2.6)*46,y=gy-47+(i%4)*5,r=i%3+2.5,col=i%2?'#e8b572':'#72cbb7';return `<rect x="${x}" y="${y}" width="${r*2}" height="${r*2}" rx="2" fill="${col}" class="confetti" style="animation-delay:${(i%7)*.07}s"/>`}).join('')+`<circle cx="${state.actorX}" cy="${state.actorY}" r="25" stroke="#84d6c1" stroke-width="3" fill="none" class="animated-ring"/>`;}else $('confetti').innerHTML='';
-renderSpeed();}
-function renderSpeed(){const q=cfg();if(!q.chooseSpeed){$('speed-control').innerHTML='';return}const select=state.speedB;const pill=(x,num,label)=>`<g data-speed="${num}" role="button" tabindex="0" aria-label="オレンジのはやさ ${label}" style="cursor:pointer"><rect x="${x}" y="559" width="79" height="24" rx="12" fill="${select===num?'#f4a776':'#fff'}" stroke="${select===num?'#f4a776':'#dce9e4'}" stroke-width="1.5"/><text x="${x+39.5}" y="575" text-anchor="middle" font-size="11" font-weight="900" fill="${select===num?'#fff':'#869c98'}">${label}</text></g>`;$('speed-control').innerHTML=`<text x="200" y="550" text-anchor="middle" font-size="10" font-weight="850" fill="#93aba6">オレンジの はやさ</text>${pill(111,1,'ふつう')}${pill(203,2,'2ばい')}`;}
-function resetMotion(){state.attemptId++;state.running=false;state.clock=0;state.win=false;state.actorRide=null;state.actorX=57;state.actorY=yAt(startH())-23;state.actorHop=0;state.error=null;state.wonFx=false;state.peek=false;$('future').setAttribute('aria-pressed','false');$('future').classList.remove('active');$('board-notice').className='board-notice';$('play').classList.remove('win');$('play').disabled=false;$('play').innerHTML='わたってみる <span>→</span>';}
-function loadLevel(i){state.level=clamp(i,0,LEVELS.length-1);const q=cfg();state.phaseA=q.ia;state.phaseB=q.ib??0;state.speedB=q.initialSpeed??q.sb??1;resetMotion();state.interacted=false;$('counter').textContent=`${String(i+1).padStart(2,'0')} / 10`;$('chapter').textContent=i<4?'CHAPTER 01 · はしの ひみつ':i<7?'CHAPTER 02 · ふたつの まる':'CHAPTER 03 · はやさの ひみつ';$('headline').textContent=q.title;$('description').textContent=q.caption;$('steps').innerHTML=LEVELS.map((_,n)=>`<span class="${n<i?'done':n===i?'current':''}"></span>`).join('');$('hintline').className='hintline';$('hintline').textContent=i===0?'● をまわすと、橋も動くよ':q.chooseSpeed?'まると はやさを 決めたら、わたってみよう':'橋を動かして、つぎの高さを 予想しよう';scene()}
+renderSpeed();updateGuide();}
+
+function checkpointStatus(){const q=cfg();const on=near(height('a',0),startH());const transfer=!q.dual||near(height('a',q.transfer),height('b',q.transfer));const finish=near(height(q.dual?'b':'a',q.tend),goalH());return {on,transfer,finish,all:on&&transfer&&finish}}
+function updateGuide(){
+ const q=cfg(),c=checkpointStatus(),stages=q.dual?[{label:'のる',time:'いま',ok:c.on},{label:'のりかえ',time:q.transfer+'こ先',ok:c.transfer},{label:'ゴール',time:q.tend+'こ先',ok:c.finish}]:[{label:'のる',time:'いま',ok:c.on},{label:'ゴール',time:q.tend+'こ先',ok:c.finish}];
+ $('route').innerHTML=stages.map((s,i)=>`<div class="route-step ${s.ok?'ok':''} ${!s.ok&&!stages.slice(0,i).some(v=>!v.ok)?'active':''}"><span class="tick">${s.ok?'✓':i+1}</span><span class="step-words"><span class="step-when">${s.time}</span><span class="step-name">${s.label}</span></span></div>${i===stages.length-1?'':'<span class="route-sep">›</span>'}`).join('');
+ let text='',mode='',step=1;
+ if(state.preview){text='ウサギが出発する前に、橋の動きを見てみよう';mode='good';step='▶'}
+ else if(state.win){text='やった！ ウサギが ゴールに着いたよ';mode='good';step='✓'}
+ else if(state.running){text='ウサギが出発！ 橋が動くところを 見てみよう';mode='good';step='▶'}
+ else if(state.lastFeedback){text=state.lastFeedback;mode='bad';step='!'}
+ else if(c.all){text='じゅんびOK！ 「しゅっぱつ！」を押そう';mode='good';step='✓'}
+ else if(!c.on){text='① みどりの橋を、左の地面と 同じ高さにしよう';step=1}
+ else if(q.dual&&!c.transfer){text='② つぎに、みどりとオレンジが 出会う高さにしよう';step=2}
+ else {text=`${q.dual?'③':'②'} 点線の橋が、右のゴールと 同じ高さになるようにしよう`;step=q.dual?3:2}
+ $('guide-step').textContent=step;$('hintline').textContent=text;$('hintline').className='hintline '+mode;$('guidance').className='guidance '+mode;
+ $('play').innerHTML=state.win?(state.level===LEVELS.length-1?'もういちど あそぶ <span>↻</span>':'つぎの ステージ <span>→</span>'):'しゅっぱつ！ <span>→</span>';
+ if(!state.win&&!state.running&&state.level===0&&!state.interacted){$('guide-step').textContent='↻';$('hintline').textContent='大きな みどりの点を 指で ぐるっと回してみよう'}
+}
+function renderSpeed(){const q=cfg();if(!q.chooseSpeed){$('speed-control').innerHTML='';return}const select=state.speedB;const pill=(x,num,label)=>`<g data-speed="${num}" role="button" tabindex="0" aria-label="オレンジのはやさ ${label}" style="cursor:pointer"><rect x="${x}" y="506" width="79" height="24" rx="12" fill="${select===num?'#f4a776':'#fff'}" stroke="${select===num?'#f4a776':'#dce9e4'}" stroke-width="1.5"/><text x="${x+39.5}" y="522" text-anchor="middle" font-size="11" font-weight="900" fill="${select===num?'#fff':'#869c98'}">${label}</text></g>`;$('speed-control').innerHTML=`<text x="200" y="496" text-anchor="middle" font-size="10" font-weight="850" fill="#93aba6">オレンジの はやさ</text>${pill(111,1,'ふつう')}${pill(203,2,'2ばい')}`;}
+function resetMotion(){state.attemptId++;state.running=false;state.clock=0;state.win=false;state.actorRide=null;state.actorX=57;state.actorY=yAt(startH())-23;state.actorHop=0;state.error=null;state.wonFx=false;state.peek=true;state.preview=false;state.lastFeedback='';$('future').classList.remove('active');$('future').disabled=false;$('board-notice').className='board-notice';$('play').classList.remove('win');$('play').disabled=false;$('play').innerHTML='しゅっぱつ！ <span>→</span>';}
+function loadLevel(i){state.level=clamp(i,0,LEVELS.length-1);const q=cfg();state.phaseA=q.ia;state.phaseB=q.ib??0;state.speedB=q.initialSpeed??q.sb??1;resetMotion();state.interacted=false;$('counter').textContent=`${String(i+1).padStart(2,'0')} / 10`;$('chapter').textContent=i<4?'CHAPTER 01 · はしの ひみつ':i<7?'CHAPTER 02 · ふたつの まる':'CHAPTER 03 · はやさの ひみつ';$('headline').textContent=q.title;$('description').textContent=q.caption;$('steps').innerHTML=LEVELS.map((_,n)=>`<span class="${n<i?'done':n===i?'current':''}"></span>`).join('');$('hintline').className='hintline';$('hintline').textContent='';scene()}
 const valid=(testLevel=state.level)=>{const q=LEVELS[testLevel],a=state.phaseA,b=state.phaseB,sp=state.speedB,start=Math.sin(rad(q.a)),goal=Math.sin(rad(q.dual?q.b+q.sb*90*q.tend:q.a+q.sa*90*q.tend));const y=(p,s,t)=>Math.sin(rad(p)+s*Math.PI/2*t);return near(y(a,q.sa,0),start)&&(!q.dual||near(y(a,q.sa,q.transfer),y(b,sp,q.transfer)))&&near(q.dual?y(b,sp,q.tend):y(a,q.sa,q.tend),goal)};
 const getAngle=(x,y,cx,cy)=>Math.atan2(cy-y,x-cx);
 let drag=null;
-function pointerStart(e){const wheelEl=e.target.closest('[data-wheel]');if(!wheelEl||state.running||state.win)return;const which=wheelEl.dataset.wheel;if(which==='b'&&!cfg().dual)return;e.preventDefault();const rect=$('board-svg').getBoundingClientRect(),sx=400/rect.width,sy=585/rect.height,c=coords();const px=(e.clientX-rect.left)*sx,py=(e.clientY-rect.top)*sy,xc=which==='a'?c.xa:c.xb;const init=getAngle(px,py,xc,c.ry);drag={which,id:e.pointerId,prev:init,phase:which==='a'?state.phaseA:state.phaseB};$('board-svg').setPointerCapture(e.pointerId);playNote(520,.016,.06)}
-function pointerMove(e){if(!drag||drag.id!==e.pointerId)return;e.preventDefault();const rect=$('board-svg').getBoundingClientRect(),sx=400/rect.width,sy=585/rect.height,c=coords(),xc=drag.which==='a'?c.xa:c.xb;const a=getAngle((e.clientX-rect.left)*sx,(e.clientY-rect.top)*sy,xc,c.ry);let delta=a-drag.prev;if(delta>Math.PI)delta-=TAU;if(delta< -Math.PI)delta+=TAU;drag.prev=a;drag.phase+=delta/D;const key=drag.which==='a'?'phaseA':'phaseB';state[key]=mod(drag.phase);state.interacted=true;textNote('いいね！ つぎの高さを よそうしてみよう');scene();tick()}
+function pointerStart(e){const wheelEl=e.target.closest('[data-wheel]');if(!wheelEl||state.running||state.win||state.preview)return;const which=wheelEl.dataset.wheel;if(which==='b'&&!cfg().dual)return;e.preventDefault();const rect=$('board-svg').getBoundingClientRect(),sx=400/rect.width,sy=532/rect.height,c=coords();const px=(e.clientX-rect.left)*sx,py=(e.clientY-rect.top)*sy,xc=which==='a'?c.xa:c.xb;const init=getAngle(px,py,xc,c.ry);drag={which,id:e.pointerId,prev:init,phase:which==='a'?state.phaseA:state.phaseB};$('board-svg').setPointerCapture(e.pointerId);playNote(520,.016,.06)}
+function pointerMove(e){if(!drag||drag.id!==e.pointerId)return;e.preventDefault();const rect=$('board-svg').getBoundingClientRect(),sx=400/rect.width,sy=532/rect.height,c=coords(),xc=drag.which==='a'?c.xa:c.xb;const a=getAngle((e.clientX-rect.left)*sx,(e.clientY-rect.top)*sy,xc,c.ry);let delta=a-drag.prev;if(delta>Math.PI)delta-=TAU;if(delta< -Math.PI)delta+=TAU;drag.prev=a;drag.phase+=delta/D;const key=drag.which==='a'?'phaseA':'phaseB';state[key]=mod(drag.phase);state.interacted=true;state.lastFeedback='';scene();tick()}
 function pointerEnd(e){if(!drag||e.pointerId!==drag.id)return;const key=drag.which==='a'?'phaseA':'phaseB';state[key]=mod(Math.round(state[key]/45)*45);drag=null;scene();playNote(659.25,.022,.08)}
-$('board-svg').addEventListener('pointerdown',e=>{if(e.target.closest('[data-speed]')){if(state.running||state.win)return;const p=e.target.closest('[data-speed]');state.speedB=Number(p.dataset.speed);scene();playNote(660,.02,.09);textNote('はやさが 変わった！');return}pointerStart(e)});
+$('board-svg').addEventListener('pointerdown',e=>{if(e.target.closest('[data-speed]')){if(state.running||state.win||state.preview)return;const p=e.target.closest('[data-speed]');state.speedB=Number(p.dataset.speed);state.lastFeedback='';scene();playNote(660,.02,.09);textNote('はやさが 変わった！');return}pointerStart(e)});
 $('board-svg').addEventListener('pointermove',pointerMove);$('board-svg').addEventListener('pointerup',pointerEnd);$('board-svg').addEventListener('pointercancel',pointerEnd);
-$('board-svg').addEventListener('keydown',e=>{const sp=e.target.closest('[data-speed]');if(sp&&['Enter',' '].includes(e.key)){e.preventDefault();state.speedB=Number(sp.dataset.speed);scene();playNote(660,.02,.09);return}const el=e.target.closest('[data-wheel]');if(!el||state.running||state.win)return;if(['ArrowLeft','ArrowDown','ArrowRight','ArrowUp'].includes(e.key)){e.preventDefault();const which=el.dataset.wheel,key=which==='a'?'phaseA':'phaseB';state[key]=mod(state[key]+(['ArrowLeft','ArrowDown'].includes(e.key)?-45:45));state.interacted=true;scene();playNote(659,.02,.075)}});
+$('board-svg').addEventListener('keydown',e=>{const sp=e.target.closest('[data-speed]');if(sp&&['Enter',' '].includes(e.key)){e.preventDefault();state.speedB=Number(sp.dataset.speed);scene();playNote(660,.02,.09);return}const el=e.target.closest('[data-wheel]');if(!el||state.running||state.win||state.preview)return;if(['ArrowLeft','ArrowDown','ArrowRight','ArrowUp'].includes(e.key)){e.preventDefault();const which=el.dataset.wheel,key=which==='a'?'phaseA':'phaseB';state[key]=mod(state[key]+(['ArrowLeft','ArrowDown'].includes(e.key)?-45:45));state.interacted=true;state.lastFeedback='';scene();playNote(659,.02,.075)}});
 function tween(ms,fn,id){return new Promise(resolve=>{const start=performance.now();const dur=Math.max(1,ms*(window.__BRIDGE_TEST_SPEED??1));const step=now=>{if(id!==state.attemptId){resolve(false);return}const t=clamp((now-start)/dur,0,1);fn(t);scene();if(t>=1)resolve(true);else requestAnimationFrame(step)};requestAnimationFrame(step)})}
 async function walk(to,ms,id){const from=state.actorX;return tween(ms,t=>{const ease=t*t*(3-2*t);state.actorX=from+(to-from)*ease;state.actorHop=10*Math.abs(Math.sin(t*Math.PI*2))},id)}
 async function rotate(from,to,id,ride){state.actorRide=ride;return tween((to-from)*1030,t=>{state.clock=from+(to-from)*t;state.actorHop=0},id)}
-async function fail(message,at,id){if(id!==state.attemptId)return;state.error=at;missSound();textNote(message,'bad');popup('おしい！','bad',670);scene();await sleep(800);if(id!==state.attemptId)return;state.running=false;state.clock=0;state.actorX=57;state.actorY=yAt(startH())-23;state.actorHop=0;state.actorRide=null;state.error=null;$('play').disabled=false;scene();}
-async function run(){if(state.running)return;if(state.win){loadLevel(state.level===LEVELS.length-1?0:state.level+1);playNote(784,.025,.10);return}const q=cfg();state.attemptId++;const id=state.attemptId;state.running=true;state.peek=false;state.error=null;$('future').setAttribute('aria-pressed','false');$('future').classList.remove('active');$('play').disabled=true;textNote('いくよ！','good');scene();await sleep(120);if(id!==state.attemptId)return;
-if(!near(height('a',0),startH())){await fail('さいしょの橋が つながっていないよ',[xLandL(),yAt(startH()),xA()-28,yAt(height('a',0))],id);return}
+async function fail(message,at,id){if(id!==state.attemptId)return;state.error=at;state.lastFeedback=message;missSound();textNote(message,'bad');popup('おしい！','bad',670);scene();await sleep(800);if(id!==state.attemptId)return;state.running=false;state.clock=0;$('future').disabled=false;state.actorX=57;state.actorY=yAt(startH())-23;state.actorHop=0;state.actorRide=null;state.error=null;$('play').disabled=false;scene();}
+async function run(){if(state.running||state.preview)return;if(state.win){loadLevel(state.level===LEVELS.length-1?0:state.level+1);playNote(784,.025,.10);return}const q=cfg();state.attemptId++;const id=state.attemptId;state.running=true;state.peek=true;state.error=null;state.lastFeedback='';$('future').classList.remove('active');$('future').disabled=false;$('play').disabled=true;textNote('いくよ！','good');scene();await sleep(120);if(id!==state.attemptId)return;
+if(!near(height('a',0),startH())){await fail('左の地面と 橋の高さが ちがうよ',[xLandL(),yAt(startH()),xA()-28,yAt(height('a',0))],id);return}
 state.actorRide=null;await walk(xA(),430,id);if(id!==state.attemptId)return;playNote(587,.017,.08);
-if(q.dual){await rotate(0,q.transfer,id,'a');if(id!==state.attemptId)return;const ya=yAt(height('a',q.transfer)),yb=yAt(height('b',q.transfer));if(!near(height('a',q.transfer),height('b',q.transfer))){state.actorRide=null;await fail('ふたつの橋の 高さが ちがった！',[xA()+28,ya,xB()-28,yb],id);return}state.actorRide=null;playNote(740,.02,.11);await walk(xB(),400,id);if(id!==state.attemptId)return;await rotate(q.transfer,q.tend,id,'b')}
+if(q.dual){await rotate(0,q.transfer,id,'a');if(id!==state.attemptId)return;const ya=yAt(height('a',q.transfer)),yb=yAt(height('b',q.transfer));if(!near(height('a',q.transfer),height('b',q.transfer))){state.actorRide=null;await fail('のりかえるとき、2つの橋の 高さがちがうよ',[xA()+28,ya,xB()-28,yb],id);return}state.actorRide=null;playNote(740,.02,.11);await walk(xB(),400,id);if(id!==state.attemptId)return;await rotate(q.transfer,q.tend,id,'b')}
 else await rotate(0,q.tend,id,'a');if(id!==state.attemptId)return;
-const last=height(q.dual?'b':'a',q.tend);if(!near(last,goalH())){state.actorRide=null;await fail('ゴールの高さまで あとすこし！',[q.dual?xB()+28:xA()+36,yAt(last),xLandR(),yAt(goalH())],id);return}
-state.actorRide=null;await walk(xLandR()+24,530,id);if(id!==state.attemptId)return;state.running=false;state.win=true;state.actorHop=0;state.wonFx=true;scene();winSound();popup('やった！ つながった！','good',1400);textNote('うまくいった！ つぎの橋へ','good');$('play').classList.add('win');$('play').disabled=false;$('play').innerHTML=state.level===LEVELS.length-1?'もういちど あそぶ <span>↻</span>':'つぎの ステージ <span>→</span>';try{localStorage.setItem('orbitBridgeUnlocked',String(Math.max(Number(localStorage.getItem('orbitBridgeUnlocked'))||0,state.level+1)))}catch{}
+const last=height(q.dual?'b':'a',q.tend);if(!near(last,goalH())){state.actorRide=null;await fail('右のゴールと、橋の高さが ちがうよ',[q.dual?xB()+28:xA()+36,yAt(last),xLandR(),yAt(goalH())],id);return}
+state.actorRide=null;await walk(xLandR()+24,530,id);if(id!==state.attemptId)return;state.running=false;$('future').disabled=false;state.win=true;state.actorHop=0;state.wonFx=true;scene();winSound();popup('やった！ つながった！','good',1400);textNote('うまくいった！ つぎの橋へ','good');$('play').classList.add('win');$('play').disabled=false;updateGuide();try{localStorage.setItem('orbitBridgeUnlocked',String(Math.max(Number(localStorage.getItem('orbitBridgeUnlocked'))||0,state.level+1)))}catch{}
 }
 $('play').addEventListener('click',run);
 $('reset').addEventListener('click',()=>{loadLevel(state.level);playNote(494,.024,.09)});
-$('future').addEventListener('click',()=>{if(state.running||state.win)return;state.peek=!state.peek;$('future').setAttribute('aria-pressed',String(state.peek));$('future').classList.toggle('active',state.peek);scene();playNote(587,.021,.08);textNote(state.peek?'点線が、これからの橋の高さだよ':'橋を動かして、つぎの高さを よそうしよう')});
+$('future').addEventListener('click',async()=>{
+ if(state.running||state.win||state.preview)return;
+ state.preview=true;state.clock=0;
+ const id=++state.attemptId;
+ $('future').disabled=true;$('play').disabled=true;
+ playNote(588,.013,.11);
+ scene();
+ const destination=cfg().dual?cfg().transfer:cfg().tend;
+ await tween(Math.min(1650,650*destination),t=>{state.clock=t*destination},id);
+ if(id!==state.attemptId)return;
+ await sleep(170);
+ await tween(380,t=>{state.clock=destination*(1-t)},id);
+ if(id!==state.attemptId)return;
+ state.clock=0;state.preview=false;
+ $('future').disabled=false;$('play').disabled=false;
+ scene();
+});
 $('sound').addEventListener('click',()=>{soundOn=!soundOn;$('sound-waves').style.display=soundOn?'':'none';$('sound').setAttribute('aria-label',soundOn?'音を消す':'音をつける');if(soundOn)playNote(784,.02,.1)});
 loadLevel(0);
 window.__orbitBridgeTest={LEVELS,state,loadLevel,scene,valid,run,solve(i){loadLevel(i);state.phaseA=LEVELS[i].a;state.phaseB=LEVELS[i].b??0;state.speedB=LEVELS[i].sb??1;scene();},setSpeed(x){state.speedB=x;scene()}};
